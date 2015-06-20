@@ -1,0 +1,160 @@
+{
+    "appKeys": {
+        "bluetoothvibe": 0,
+        "condition": 3,
+        "hourlyvibe": 1,
+        "temperature": 2
+    },
+    "capabilities": [
+        "configurable"
+    ],
+    "companyName": "Yuriy Galanter / chops",
+    "longName": "mrflip",
+    "projectType": "native",
+    "resources": {
+        "media": [
+            {
+                "file": "images/wood-2y-up.png",
+                "name": "IMAGE_2Y_UP",
+                "type": "png"
+            },
+            {
+                "file": "fonts/HWYGCOND.TTF",
+                "name": "FONT_CUSTOM_22",
+                "type": "font"
+            },
+            {
+                "file": "images/wood2bg.png",
+                "name": "IMAGE_WOODBG",
+                "type": "png"
+            },
+            {
+                "file": "images/wood-bt.png",
+                "name": "IMAGE_BLUETOOTH",
+                "type": "png"
+            },
+            {
+                "file": "images/blank.png",
+                "name": "IMAGE_BLANK",
+                "type": "png"
+            },
+            {
+                "file": "images/menu_image.png",
+                "menuIcon": true,
+                "name": "MENU_IMAGE",
+                "type": "png"
+            },
+            {
+                "file": "images/9_down.png",
+                "name": "IMAGE_9_DOWN",
+                "type": "png"
+            },
+            {
+                "file": "images/9_up.png",
+                "name": "IMAGE_9_UP",
+                "type": "png"
+            },
+            {
+                "file": "images/8_down.png",
+                "name": "IMAGE_8_DOWN",
+                "type": "png"
+            },
+            {
+                "file": "images/8_up.png",
+                "name": "IMAGE_8_UP",
+                "type": "png"
+            },
+            {
+                "file": "images/7_down.png",
+                "name": "IMAGE_7_DOWN",
+                "type": "png"
+            },
+            {
+                "file": "images/7_up.png",
+                "name": "IMAGE_7_UP",
+                "type": "png"
+            },
+            {
+                "file": "images/6_down.png",
+                "name": "IMAGE_6_DOWN",
+                "type": "png"
+            },
+            {
+                "file": "images/6_up.png",
+                "name": "IMAGE_6_UP",
+                "type": "png"
+            },
+            {
+                "file": "images/5_down.png",
+                "name": "IMAGE_5_DOWN",
+                "type": "png"
+            },
+            {
+                "file": "images/5_up.png",
+                "name": "IMAGE_5_UP",
+                "type": "png"
+            },
+            {
+                "file": "images/4_down.png",
+                "name": "IMAGE_4_DOWN",
+                "type": "png"
+            },
+            {
+                "file": "images/4_up.png",
+                "name": "IMAGE_4_UP",
+                "type": "png"
+            },
+            {
+                "file": "images/3_down.png",
+                "name": "IMAGE_3_DOWN",
+                "type": "png"
+            },
+            {
+                "file": "images/3_up.png",
+                "name": "IMAGE_3_UP",
+                "type": "png"
+            },
+            {
+                "file": "images/2_down.png",
+                "name": "IMAGE_2_DOWN",
+                "type": "png"
+            },
+            {
+                "file": "images/2_up.png",
+                "name": "IMAGE_2_UP",
+                "type": "png"
+            },
+            {
+                "file": "images/1_down.png",
+                "name": "IMAGE_1_DOWN",
+                "type": "png"
+            },
+            {
+                "file": "images/1_up.png",
+                "name": "IMAGE_1_UP",
+                "type": "png"
+            },
+            {
+                "file": "images/0_down.png",
+                "name": "IMAGE_0_DOWN",
+                "type": "png"
+            },
+            {
+                "file": "images/0_up.png",
+                "name": "IMAGE_0_UP",
+                "type": "png"
+            }
+        ]
+    },
+    "sdkVersion": "3",
+    "shortName": "mrflip",
+    "targetPlatforms": [
+        "aplite",
+        "basalt"
+    ],
+    "uuid": "262a48fc-df8b-4b69-a2cf-39b0afa1d274",
+    "versionLabel": "1.0",
+    "watchapp": {
+        "watchface": true
+    }
+}
