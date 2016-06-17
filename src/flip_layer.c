@@ -33,15 +33,16 @@ static void layer_update_callback(Layer *me, GContext* ctx) {
 		graphics_draw_bitmap_in_rect(ctx, flip_layer->anim_resized_image, (GRect) { .origin = origin, .size = bounds.size });
 		graphics_draw_rect(ctx, (GRect) { .origin = { 0, flip_layer->anim_image_y }, .size = { layer_bounds.size.w, bounds.size.h } });
 	}
-	
+  
+  /*
     //middle line
-//    graphics_context_set_fill_color(ctx, digit_back);
-//  	graphics_fill_rect(ctx, GRect(0,layer_bounds.size.h/2 - 1,layer_bounds.size.w,3), 0, 0);
+    graphics_context_set_fill_color(ctx, digit_back);
+  	graphics_fill_rect(ctx, GRect(0,layer_bounds.size.h/2 - 1,layer_bounds.size.w,3), 0, 0);
   
-//    graphics_context_set_stroke_color(ctx, color_back);
-//    graphics_draw_line(ctx, GPoint(0, layer_bounds.size.h/2),  GPoint(layer_bounds.size.w, layer_bounds.size.h/2));
+    graphics_context_set_stroke_color(ctx, color_back);
+    graphics_draw_line(ctx, GPoint(0, layer_bounds.size.h/2),  GPoint(layer_bounds.size.w, layer_bounds.size.h/2));
   
-
+*/
     
 }
 
@@ -49,11 +50,7 @@ Layer* flip_layer_get_layer(FlipLayer *flip_layer){
 	return flip_layer->layer;
 }
 
-#ifdef PBL_COLOR
 static void animationUpdate(Animation *animation, const AnimationProgress progress) {
-#else
-static void animationUpdate(Animation *animation, const uint32_t progress) {
-#endif
 	FlipLayer *flip_layer = (FlipLayer *)animation_get_context(animation);
 
 	GRect layer_bounds = layer_get_bounds(flip_layer->layer);
@@ -150,9 +147,6 @@ void animation_stopped(Animation *animation, bool finished, void *data) {
 
 	flip_layer->isAnimating = false;
   
-  //YG JUN-04-2015: On basalt we need to recreate animation
-  #ifdef PBL_COLOR
-   
     flip_layer->animation = animation_create();
   	static const AnimationImplementation implementation = {
   	  .update = animationUpdate
@@ -161,10 +155,9 @@ void animation_stopped(Animation *animation, bool finished, void *data) {
   		.started = (AnimationStartedHandler) animation_started,
   		.stopped = (AnimationStoppedHandler) animation_stopped,
   	}, flip_layer);
-  	animation_set_duration(flip_layer->animation, 1500);
+  	animation_set_duration(flip_layer->animation, 1400);
   	animation_set_implementation(flip_layer->animation, &implementation);
     
-  #endif
   
 
 	layer_mark_dirty(flip_layer->layer);
@@ -192,7 +185,7 @@ FlipLayer* flip_layer_create(GRect frame){
 		.started = (AnimationStartedHandler) animation_started,
 		.stopped = (AnimationStoppedHandler) animation_stopped,
 	}, flip_layer);
-	animation_set_duration(flip_layer->animation, 1500);
+	animation_set_duration(flip_layer->animation, 1400);
 	animation_set_implementation(flip_layer->animation, &implementation);
 
 	flip_layer->current_Digit = 0;
@@ -211,11 +204,7 @@ FlipLayer* flip_layer_create(GRect frame){
 void flip_layer_destroy(FlipLayer *flip_layer){
 	if(flip_layer->animation){
 		animation_unschedule(flip_layer->animation);
-    
-    //YG JUN-04-2015: On aplite we need to recreate animation
-    #ifndef PBL_COLOR
-		  animation_destroy(flip_layer->animation);
-    #endif
+
 	}
 	layer_destroy(flip_layer->layer);
 	if(flip_layer->up_image){

@@ -1,0 +1,187 @@
+{
+    "author": "chops",
+    "dependencies": {},
+    "keywords": [],
+    "name": "flipboard",
+    "pebble": {
+        "capabilities": [
+            "configurable"
+        ],
+        "displayName": "Flipside",
+        "enableMultiJS": false,
+        "messageKeys": {
+            "bluetoothvibe": 0,
+            "condition": 3,
+            "dateformat1": 4,
+            "dateformat2": 5,
+            "dateformat3": 6,
+            "hourlyvibe": 1,
+            "temperature": 2
+        },
+        "projectType": "native",
+        "resources": {
+            "media": [
+                {
+                    "file": "images/sep",
+                    "name": "IMAGE_SEPARATOR",
+                    "targetPlatforms": null,
+                    "type": "bitmap"
+                },
+                {
+                    "file": "images/blank.png",
+                    "name": "IMAGE_BLANK",
+                    "targetPlatforms": null,
+                    "type": "bitmap"
+                },
+                {
+                    "file": "images/wood-bt.png",
+                    "name": "IMAGE_BLUETOOTH",
+                    "type": "bitmap"
+                },
+                {
+                    "file": "images/8_down.png",
+                    "name": "IMAGE_8_DOWN",
+                    "targetPlatforms": null,
+                    "type": "bitmap"
+                },
+                {
+                    "file": "images/9_up.png",
+                    "name": "IMAGE_9_UP",
+                    "targetPlatforms": null,
+                    "type": "bitmap"
+                },
+                {
+                    "file": "images/9_down.png",
+                    "name": "IMAGE_9_DOWN",
+                    "targetPlatforms": null,
+                    "type": "bitmap"
+                },
+                {
+                    "file": "images/menu_image.png",
+                    "menuIcon": true,
+                    "name": "MENU_IMAGE",
+                    "type": "bitmap"
+                },
+                {
+                    "file": "images/7_down.png",
+                    "name": "IMAGE_7_DOWN",
+                    "targetPlatforms": null,
+                    "type": "bitmap"
+                },
+                {
+                    "file": "images/1_up.png",
+                    "name": "IMAGE_1_UP",
+                    "targetPlatforms": null,
+                    "type": "bitmap"
+                },
+                {
+                    "file": "images/7_up.png",
+                    "name": "IMAGE_7_UP",
+                    "targetPlatforms": null,
+                    "type": "bitmap"
+                },
+                {
+                    "file": "images/6_up.png",
+                    "name": "IMAGE_6_UP",
+                    "targetPlatforms": null,
+                    "type": "bitmap"
+                },
+                {
+                    "file": "images/6_down.png",
+                    "name": "IMAGE_6_DOWN",
+                    "targetPlatforms": null,
+                    "type": "bitmap"
+                },
+                {
+                    "file": "images/5_up.png",
+                    "name": "IMAGE_5_UP",
+                    "targetPlatforms": null,
+                    "type": "bitmap"
+                },
+                {
+                    "file": "images/5_down.png",
+                    "name": "IMAGE_5_DOWN",
+                    "targetPlatforms": null,
+                    "type": "bitmap"
+                },
+                {
+                    "file": "images/4_up.png",
+                    "name": "IMAGE_4_UP",
+                    "targetPlatforms": null,
+                    "type": "bitmap"
+                },
+                {
+                    "file": "images/4_down.png",
+                    "name": "IMAGE_4_DOWN",
+                    "targetPlatforms": null,
+                    "type": "bitmap"
+                },
+                {
+                    "file": "images/3_up.png",
+                    "name": "IMAGE_3_UP",
+                    "targetPlatforms": null,
+                    "type": "bitmap"
+                },
+                {
+                    "file": "images/2_down.png",
+                    "name": "IMAGE_2_DOWN",
+                    "targetPlatforms": null,
+                    "type": "bitmap"
+                },
+                {
+                    "file": "images/2_up.png",
+                    "name": "IMAGE_2_UP",
+                    "targetPlatforms": null,
+                    "type": "bitmap"
+                },
+                {
+                    "file": "images/1_down.png",
+                    "name": "IMAGE_1_DOWN",
+                    "targetPlatforms": null,
+                    "type": "bitmap"
+                },
+                {
+                    "file": "images/3_down.png",
+                    "name": "IMAGE_3_DOWN",
+                    "targetPlatforms": null,
+                    "type": "bitmap"
+                },
+                {
+                    "file": "images/0_up.png",
+                    "name": "IMAGE_0_UP",
+                    "targetPlatforms": null,
+                    "type": "bitmap"
+                },
+                {
+                    "file": "images/0_down.png",
+                    "name": "IMAGE_0_DOWN",
+                    "targetPlatforms": null,
+                    "type": "bitmap"
+                },
+                {
+                    "file": "fonts/HWYGCOND.TTF",
+                    "name": "FONT_CUSTOM_18",
+                    "targetPlatforms": null,
+                    "type": "font"
+                },
+                {
+                    "file": "images/8_up.png",
+                    "name": "IMAGE_8_UP",
+                    "targetPlatforms": null,
+                    "type": "bitmap"
+                }
+            ]
+        },
+        "sdkVersion": "3",
+        "targetPlatforms": [
+            "aplite",
+            "basalt",
+            "chalk"
+        ],
+        "uuid": "7efde5b2-a85f-4d2c-9991-49110b0bb0ff",
+        "watchapp": {
+            "watchface": true
+        }
+    },
+    "version": "1.0.0"
+}
